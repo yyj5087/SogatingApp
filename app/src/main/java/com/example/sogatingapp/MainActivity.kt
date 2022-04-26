@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.sogatingapp.auto.IntroActivity
 import com.example.sogatingapp.auto.UserDataModel
 import com.example.sogatingapp.setting.SettingActivity
@@ -30,6 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     private val usersDataList = mutableListOf<UserDataModel>()
 
+    private var userCount = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -50,6 +53,21 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onCardSwiped(direction: Direction?) {
+
+                if (direction == Direction.Right){
+                    Toast.makeText(this@MainActivity, "right", Toast.LENGTH_SHORT).show()
+
+                }
+                if (direction == Direction.Left){
+                    Toast.makeText(this@MainActivity, "left", Toast.LENGTH_SHORT).show()
+                }
+
+                userCount = userCount + 1
+
+                if (userCount == usersDataList.count()){
+                    getUserDataList()
+                    Toast.makeText(this@MainActivity, "유저 새롭게 받아옵니다.", Toast.LENGTH_LONG).show()
+                }
 
             }
 
