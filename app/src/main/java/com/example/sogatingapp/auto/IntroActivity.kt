@@ -11,6 +11,12 @@ class IntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
 
+        val login = findViewById<Button>(R.id.loginBtn)
+        login.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
         val joinBtn = findViewById<Button>(R.id.joinBtn)
         joinBtn.setOnClickListener {
             val intent = Intent(this, JoinActivity::class.java)
