@@ -29,7 +29,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:hint="email"
-                android:inputType="textEmailAddress"
+                android:id="@+id/emailArea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -45,7 +45,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:hint="password"
-                android:inputType="numberPassword"
+                android:id="@+id/passwordArea"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -61,7 +61,6 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:hint="passwordCheck"
-                android:inputType="numberPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -120,6 +119,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/joinBtn"
             android:layout_margin="10dp"
             android:text="회원가입"
             android:background="@color/mainColor"

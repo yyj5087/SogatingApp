@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "737489513683",
+    "project_id": "sogaeting-97dbb",
+    "storage_bucket": "sogaeting-97dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737489513683:android:65f3e2afd49c024511f826",
+        "android_client_info": {
+          "package_name": "com.example.sogatingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737489513683-slrlvkb7g25mf4kt6lfkf0m2dch2tlsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI2XAkbsM26TBJmrxV6WHiWSzWyYiDUQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737489513683-slrlvkb7g25mf4kt6lfkf0m2dch2tlsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
