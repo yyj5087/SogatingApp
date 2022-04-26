@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SogatingApp">
         <activity
+            android:name=".setting.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".setting.MyPageActivity"
+            android:exported="true" />
+        <activity
             android:name=".auto.LoginActivity"
             android:exported="true" />
         <activity

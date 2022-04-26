@@ -13,8 +13,7 @@
         <ImageView
             android:id="@+id/profileImageArea"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
-            android:src="@drawable/no" />
+            android:layout_height="350dp" />
 
         <TextView
             android:id="@+id/itemNickname"
