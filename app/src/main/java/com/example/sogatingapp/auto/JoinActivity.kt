@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.result.ActivityResultCallback
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.sogatingapp.MainActivity
 import com.example.sogatingapp.R
 import com.example.sogatingapp.utils.FirebaseRef
@@ -33,7 +36,18 @@ class JoinActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        // 닉네임 성별 지역 나이 UID
+        val profileImage = findViewById<ImageView>(R.id.imageArea)
+
+        val getAction = registerForActivityResult(
+            ActivityResultContracts.GetContent(),
+            ActivityResultCallback { uri ->
+                profileImage.setImageURI(uri)
+            }
+        )
+
+        profileImage.setOnClickListener {
+            getAction.launch("image/*")
+        }
 
        val joinBtn = findViewById<Button>(R.id.joinBtn)
         joinBtn.setOnClickListener {
