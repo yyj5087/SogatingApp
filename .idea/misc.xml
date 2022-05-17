@@ -7,10 +7,15 @@
         <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_join.xml" value="0.1" />
         <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_my_like_list.xml" value="0.1" />
+        <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_my_msg.xml" value="0.1" />
         <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_my_page.xml" value="0.1" />
         <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_setting.xml" value="0.1" />
         <entry key="..\:/SogatingApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/SogatingApp/app/src/main/res/layout/custom_dia.xml" value="0.1189873417721519" />
+        <entry key="..\:/SogatingApp/app/src/main/res/layout/custom_dialog.xml" value="0.67" />
         <entry key="..\:/SogatingApp/app/src/main/res/layout/item_card.xml" value="0.1" />
+        <entry key="..\:/SogatingApp/app/src/main/res/layout/list_view_item.xml" value="0.1" />
         <entry key="..\:/SogatingApp/app/src/main/res/xml/network_security_config.xml" value="0.1" />
       </map>
     </option>

@@ -20,6 +20,7 @@ import com.example.sogatingapp.setting.SettingActivity
 import com.example.sogatingapp.slider.CardStackAdapter
 import com.example.sogatingapp.utils.FirebaseAutoUtils
 import com.example.sogatingapp.utils.FirebaseRef
+import com.example.sogatingapp.utils.MyInfo
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -124,6 +125,9 @@ class MainActivity : AppCompatActivity() {
                 val data = dataSnapshot.getValue(UserDataModel::class.java)
 
                 currentUserGender = data?.gender.toString()
+
+                MyInfo.myNickname = data?.nickname.toString()
+
                 getUserDataList(currentUserGender)
 
 
